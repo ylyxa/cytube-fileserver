@@ -7,7 +7,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node app.js",
+    "start": "concurrently yarn:start:*",
+    "start:node": "node src/app.js",
+    "start:nginx": "nginx -p \"$(pwd)/resources\"",
+    "watch": "concurrently yarn:watch:*",
+    "watch:node": "nodemon --watch \"src\" --exec \"yarn start:node\"",
+    "watch:nginx": "nodemon --signal SIGQUIT --watch \"resources\" -e \"*\" --exec \"yarn start:nginx\"",
     "lint": "eslint src --ext 'js'",
     "format": "prettier --write 'src/**/*.js'"
   },
@@ -15,10 +20,12 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "eslint": "^7.14.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.6",
     "prettier": "^2.2.0"
   }
 }
