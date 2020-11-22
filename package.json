@@ -10,7 +10,7 @@
     "start": "concurrently yarn:start:*",
     "start:node": "node src/app.js",
     "start:nginx": "nginx -p \"$(pwd)/resources\"",
-    "watch": "concurrently yarn:watch:*",
+    "watch": "concurrently -i yarn:watch:*",
     "watch:node": "nodemon --watch \"src\" --exec \"yarn start:node\"",
     "watch:nginx": "nodemon --signal SIGQUIT --watch \"resources\" -e \"*\" --exec \"yarn start:nginx\"",
     "lint": "eslint src --ext 'js'",

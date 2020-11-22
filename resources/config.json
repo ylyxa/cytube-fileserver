@@ -1,0 +1,46 @@
+{
+  "media": {
+    "frozen1": {
+      "title": "Frozen",
+      "duration": 1234,
+      "sources": {
+        "frozen1_360.mp4": {
+          "quality": 360
+        },
+        "frozen1_480.mp4": {
+          "quality": 480
+        },
+        "frozen1_720.mp4": {
+          "quality": 720
+        },
+        "frozen1_1080.mp4": {
+          "quality": 1080
+        }
+      }
+    },
+    "frozen2": {
+      "title": "Frozen II",
+      "duration": 1234,
+      "sources": {
+        "frozen2_360.mp4": {
+          "quality": 360
+        },
+        "frozen2_480.mp4": {
+          "quality": 480
+        },
+        "frozen2_720.mp4": {
+          "quality": 720
+        },
+        "frozen2_1080.mp4": {
+          "quality": 1080
+        }
+      },
+      "textTracks": {
+        "subs_blah.vtt": {
+          "name": "subs name",
+          "default": true
+        }
+      }
+    }
+  }
+}
