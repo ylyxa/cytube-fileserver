@@ -2,7 +2,7 @@
   "media": {
     "frozen1": {
       "title": "Frozen",
-      "duration": 1234,
+      "duration": 6133,
       "sources": {
         "frozen1_360.mp4": {
           "quality": 360
@@ -20,7 +20,7 @@
     },
     "frozen2": {
       "title": "Frozen II",
-      "duration": 1234,
+      "duration": 6194,
       "sources": {
         "frozen2_360.mp4": {
           "quality": 360
@@ -33,12 +33,6 @@
         },
         "frozen2_1080.mp4": {
           "quality": 1080
-        }
-      },
-      "textTracks": {
-        "subs_blah.vtt": {
-          "name": "subs name",
-          "default": true
         }
       }
     }

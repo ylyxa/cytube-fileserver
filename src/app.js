@@ -19,7 +19,6 @@ console.log(JSON.stringify(config, null, ' '));
 const mediaDefaults = {
   title: 'Untitled',
   live: false,
-  thumbnail: null,
 };
 
 const sourceDefaults = {
