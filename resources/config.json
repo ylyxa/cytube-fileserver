@@ -35,6 +35,60 @@
           "quality": 1080
         }
       }
+    },
+    "fever": {
+      "title": "Frozen Fever",
+      "duration": 477,
+      "sources": {
+        "fever_360.mp4": {
+          "quality": 360
+        },
+        "fever_480.mp4": {
+          "quality": 480
+        },
+        "fever_720.mp4": {
+          "quality": 720
+        },
+        "fever_1080.mp4": {
+          "quality": 1080
+        }
+      }
+    },
+    "ofa": {
+      "title": "Olaf's Frozen Adventure",
+      "duration": 1363,
+      "sources": {
+        "ofa_360.mp4": {
+          "quality": 360
+        },
+        "ofa_480.mp4": {
+          "quality": 480
+        },
+        "ofa_720.mp4": {
+          "quality": 720
+        },
+        "ofa_1080.mp4": {
+          "quality": 1080
+        }
+      }
+    },
+    "ouas": {
+      "title": "Once Upon A Snowman",
+      "duration": 455,
+      "sources": {
+        "ouas_360.mp4": {
+          "quality": 360
+        },
+        "ouas_480.mp4": {
+          "quality": 480
+        },
+        "ouas_720.mp4": {
+          "quality": 720
+        },
+        "ouas_1080.mp4": {
+          "quality": 1080
+        }
+      }
     }
   }
 }
