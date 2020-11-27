@@ -38,7 +38,7 @@ function addJsonRoute(id, getManifest) {
 }
 
 function getBaseUrl(req) {
-  const reqPort = req.get('X-Forwarded-Port') ?? listenPort;
+  const reqPort = parseInt(req.get('X-Forwarded-Port'), 10) ?? listenPort;
 
   let expectedPort;
   if (req.protocol === 'http') expectedPort = 80;
